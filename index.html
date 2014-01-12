@@ -1,0 +1,107 @@
+---
+layout: default
+title: Francis Bull
+---
+
+<div id="home">
+  <div class="posts">
+  <div id="profile_img"><img src="/assets/franbull_profile.jpg"></img></div>
+  <div id="intro_blurb"><p>Hello! I am a software developer from lovely Southern Oregon</p></div>
+  <div style="clear:both;"></div>
+  <div>
+    <h1>Links</h1>
+    <div>
+        <a href="www.roguehacklab.com">Check out the Rogue Hack Lab</a><br/>
+        <a href="http://www.byrandom.com">A site that offers you random things to buy from amazon.com</a><br/>
+        <a href="http://www.abullcreative.com">My wife is a graphic designer</a><br/>
+    </div>
+  </div>
+
+  <div id="blog_div">
+    <h1>Blurghs</h1>
+    {% for post in site.posts %}
+      <div class="blog_post">
+        <div>
+          <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+        </div>
+        <p>{{ post.excerpt }}</p>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="row">
+    <div id="tweets_div" class="col-md-6">
+      <h1>Tweeters</h1>
+      <div>
+<span>10 Jan 2014</span> &raquo; I frequently see a humming bird out of my window. I don't think we had humming birds in England. Makes me really happy whenever I see it.
+
+</div><br/>
+<div>
+<span>10 Jan 2014</span> &raquo; When I save and paster reloads, but I'm also in pdb++. Things go badly wrong for paster. Wonder what that's about.
+
+</div><br/>
+<div>
+<span>08 Jan 2014</span> &raquo; this looks like fun: <a href="http://t.co/HnmwhJDNSi">http://t.co/HnmwhJDNSi</a>
+
+</div><br/>
+<div>
+<span>07 Jan 2014</span> &raquo; ---------------------------------------------------------------------- Ran 39 tests in 243.426s 
+#shame
+
+</div><br/>
+<div>
+<span>07 Jan 2014</span> &raquo; This is epic and amazing:
+<a href="http://t.co/KevjNlCMJb">http://t.co/KevjNlCMJb</a>
+and makes me think of Turbo Outrun.
+
+</div><br/>
+<div>
+<span>07 Jan 2014</span> &raquo; Look! Sort of Space Invaders: <a href="http://t.co/BLrj881qRY">http://t.co/BLrj881qRY</a> all the excitement of things moving slowly toward you!
+
+</div><br/>
+<div>
+<span>05 Jan 2014</span> &raquo; Does anyone know touch events in dart? This works on iPhone <a href="https://t.co/jTWNU9fuJt">https://t.co/jTWNU9fuJt</a> but getting source and running locally doesn't.
+
+</div><br/>
+<div>
+<span>05 Jan 2014</span> &raquo; Idea: pages that have red or green iPhone home page icons depending on conditions (tests passing, site up).
+
+</div><br/>
+<div>
+<span>05 Jan 2014</span> &raquo; I just noticed that the iPhone clock app icon is a working clock.
+
+</div><br/>
+<div>
+<span>04 Jan 2014</span> &raquo; Mama and cub. <a href="http://t.co/F8a5TXGoh5">http://t.co/F8a5TXGoh5</a>
+
+</div><br/>
+<div>
+<span>04 Jan 2014</span> &raquo; Amy picked blueberries this summer. The boy and I are eating them straight out of the freezer. Delicious.
+
+</div><br/>
+    </div>
+    <div id="insta_div" class="col-md-6">
+      <h1>Instilgram</h1>
+      <div class="instagram_photo"><figure><img src="http://distilleryimage4.s3.amazonaws.com/6b7d0aec78cc11e397260efd55658a20_8.jpg"></img><figcaption>Cloak of invisibility. Not deployed for the moment.</figcaption></figure></div>
+<div class="instagram_photo"><figure><img src="http://distilleryimage5.s3.amazonaws.com/fd9b7f6a76e411e3b3390ebf8d8a0685_8.jpg"></img><figcaption>What do 6am and a pigs tail have in common? #twirly</figcaption></figure></div>
+<div class="instagram_photo"><figure><img src="http://distilleryimage10.s3.amazonaws.com/95006e24759111e38e0712ba5cc2f9e2_8.jpg"></img><figcaption>Cool enough for school? #toocoolforschool</figcaption></figure></div>
+<div class="instagram_photo"><figure><img src="http://distilleryimage6.s3.amazonaws.com/0b4e0868758611e381a212f39367fa5e_8.jpg"></img><figcaption>Mama and cub.</figcaption></figure></div>
+<div class="instagram_photo"><figure><img src="http://distilleryimage7.s3.amazonaws.com/e22d75d4743d11e382ff12775b1718f3_8.jpg"></img><figcaption>For a brief shining moment Kresh was 68/68.</figcaption></figure></div>
+<div class="instagram_photo"><figure><img src="http://distilleryimage6.s3.amazonaws.com/8ab8744673db11e39ba712dad6f0d952_8.jpg"></img><figcaption>1/2/2014</figcaption></figure></div>
+<div class="instagram_photo"><figure><img src="http://distilleryimage11.s3.amazonaws.com/29086e50731211e393ed129ac59cc163_8.jpg"></img><figcaption>1/1/14</figcaption></figure></div>
+<div class="instagram_photo"><figure><img src="http://distilleryimage2.s3.amazonaws.com/97cba83872a011e39d7d12ccbf42687e_8.jpg"></img><figcaption>Hilarious.</figcaption></figure></div>
+<div class="instagram_photo"><figure><img src="http://distilleryimage10.s3.amazonaws.com/8476abf272a011e3a9a512a1e226fcfe_8.jpg"></img><figcaption>Mom attacks.</figcaption></figure></div>
+<div class="instagram_photo"><figure><img src="http://distilleryimage0.s3.amazonaws.com/b1937754729c11e3bb80129c7073a39c_8.jpg"></img><figcaption>Boy in his sleigh.</figcaption></figure></div>
+    </div>
+  </div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2336462-3', 'francisbull.info');
+  ga('send', 'pageview');
+
+</script>
