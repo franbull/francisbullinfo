@@ -143,6 +143,10 @@ div.instagram_photo img{
   width: 100%;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* standard */
 .post pre {
   border: 1px solid #ddd;
